@@ -25,6 +25,16 @@ mod tests {
         let actual = from_full_word(&asdf);
         let expected: Result<String, ()> = Ok(String::from("a2f"));
         assert_eq!(actual, expected);
+
+        let kubernetes = String::from("kubernetes");
+        let actual = from_full_word(&kubernetes);
+        let expected: Result<String, ()> = Ok(String::from("k8s"));
+        assert_eq!(actual, expected);
+
+        let internationalization = String::from("internationalization");
+        let actual = from_full_word(&internationalization);
+        let expected: Result<String, ()> = Ok(String::from("i18n"));
+        assert_eq!(actual, expected);
     }
 
     #[test]
