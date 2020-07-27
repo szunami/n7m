@@ -13,6 +13,6 @@ let kubernetes = String::from("kubernetes");
 from_full_word(&kubernetes);
 # k8s
 
-to_full_word(&String::from("k8s"), dictionary_of_words);
+to_full_word(&String::from("k8s"), dictionary_of_words); # currently BYO wordlist
 # HashSet of many words, including kubernetes
 ```
