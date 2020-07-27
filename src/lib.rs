@@ -56,6 +56,11 @@ mod tests {
         let actual = from_full_word(&internationalization);
         let expected: Result<String, ()> = Ok(String::from("i18n"));
         assert_eq!(actual, expected);
+
+        let what_the_fuck = String::from("whatthefuck");
+        let actual = from_full_word(&what_the_fuck);
+        let expected: Result<String, ()> = Ok(String::from("w9k"));
+        assert_eq!(actual, expected);
     }
 
     #[test]
