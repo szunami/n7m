@@ -9,10 +9,10 @@ More than anything, this is a simple project for me to improve my Rust.
 ## Usage
 
 ```rust
-        let kubernetes = String::from("kubernetes");
-        from_full_word(&kubernetes);
-        # k8s
-        
-        to_full_word(&String::from("k8s"), dictionary_of_words);
-        # HashSet of many words, including kubernetes
+let kubernetes = String::from("kubernetes");
+from_full_word(&kubernetes);
+# k8s
+
+to_full_word(&String::from("k8s"), dictionary_of_words);
+# HashSet of many words, including kubernetes
 ```
